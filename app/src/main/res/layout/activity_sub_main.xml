@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/ebooks_bg"
+    tools:context="com.example.mega2.final_livw_demo.SubActivity">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/main_menu"
+            android:textColor="@android:color/black"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cardCornerRadius="15dp"
+            android:layout_weight="1"
+            android:id="@+id/card1"
+            android:layout_marginTop="4dp"
+            android:onClick="user"
+            app:cardBackgroundColor="@android:color/transparent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user"
+                android:layout_width="0sp"
+                android:layout_weight="0.50"
+                android:layout_height="match_parent"
+                android:paddingTop="5dp"
+                android:src="@drawable/user1" />
+
+                <TextView
+                android:id="@+id/textView1a"
+                style="@style/text1"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:layout_gravity="center"
+                android:layout_margin="50sp"
+                android:gravity="end"
+                android:text="@string/user"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="15dp"
+            android:onClick="Setting"
+            android:id="@+id/card2"
+            android:layout_marginTop="4dp"
+            app:cardBackgroundColor="@color/cardview_shadow_end_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <TextView
+                android:id="@+id/textView2a"
+                style="@style/text1"
+                android:layout_width="0sp"
+                android:layout_weight="0.50"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:layout_margin="10dp"
+                android:text="@string/settings"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="0sp"
+                    android:layout_weight="0.50"
+                    android:layout_height="match_parent"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/gear"
+                    android:id="@+id/set"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="15dp"
+            android:id="@+id/card3"
+            android:onClick="Report"
+            android:layout_marginTop="4dp"
+            app:cardBackgroundColor="@color/cardview_shadow_end_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/report"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:paddingTop="5dp"
+                android:layout_weight="0.50"
+                android:src="@drawable/report" />
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/report"
+                    android:gravity="end"
+                    style="@style/text1"
+                    android:layout_weight="0.50"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:id="@+id/textView3a" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="15dp"
+            android:onClick="preferances"
+            android:id="@+id/card4"
+            android:layout_marginTop="4dp"
+            app:cardBackgroundColor="@color/cardview_shadow_end_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                style="@style/text1"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.50"
+                android:layout_margin="10dp"
+                android:id="@+id/textview4a"
+                android:text="@string/maintenance_main"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                 android:layout_width="0sp"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="right"
+                 android:paddingTop="5dp"
+                 android:layout_weight="0.50"
+                 android:src="@drawable/maintenance"
+                 android:id="@+id/maintenance"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>

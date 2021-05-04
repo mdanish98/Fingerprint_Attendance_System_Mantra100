@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="35sp"
+      android:orientation="horizontal"
+      android:background="#4CAF50">
+      <ImageView
+          android:layout_width="50sp"
+          android:layout_marginStart="5sp"
+          android:layout_height="match_parent"
+          android:src="@drawable/login"
+          android:contentDescription="@string/app_title"/>
+      <TextView
+          android:id="@+id/textView1"
+          android:layout_marginStart="10sp"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="@string/login"
+          android:textSize="24sp"
+          android:gravity="center_vertical"
+          android:textColor="#fff"
+          android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+  </LinearLayout>
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="3sp"
+            android:background="@android:color/holo_blue_light"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        <EditText
+            android:layout_width="500sp"
+            android:layout_height="35sp"
+            android:layout_marginTop="10sp"
+            android:id="@+id/editTextUserName"
+            android:text="@string/admin_log"
+            android:background="@drawable/textview"
+            android:inputType="text" />
+
+    <EditText
+        android:layout_width="500sp"
+        android:layout_height="35sp"
+        android:background="@drawable/textview"
+        android:id="@+id/editTextPassword"
+        android:hint="@string/password"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login_btn"
+        android:layout_gravity="center"
+        android:background="@drawable/buttondsgn"
+        android:id="@+id/buttonLogin"
+        android:layout_marginTop="30dp" />
+
+</LinearLayout>

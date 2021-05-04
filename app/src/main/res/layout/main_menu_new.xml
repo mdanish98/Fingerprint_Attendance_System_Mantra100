@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="#304769"
+    android:padding="50dp"
+    tools:context="com.example.mega2.final_livw_demo.mainmenu1">
+
+    <ImageView
+        android:id="@+id/imageViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:contentDescription="@string/main_menu"
+        app:srcCompat="@drawable/main_menu" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+
+    <Button
+        android:id="@+id/buttonEnroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clkEnroll"
+        android:text="@string/enroll"
+        android:textAlignment="center"
+        android:background="#f05924"
+        android:textColor="@android:color/white" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <Button
+        android:id="@+id/buttonMarkAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clkMarkAttendance"
+        android:text="@string/mark_attendance"
+        android:textAlignment="center"
+        android:background="#f05924"
+        android:textColor="@android:color/white" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <Button
+        android:id="@+id/buttonAbout"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clkAbout"
+        android:text="@string/about"
+        android:textAlignment="center"
+        android:background="#f05924"
+        android:textColor="@android:color/white" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <Button
+        android:id="@+id/buttonFunc"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f05924"
+        android:text="@string/Function"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <Button
+        android:id="@+id/buttonLogout"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:textAlignment="center"
+        android:background="#f05924"
+        android:textColor="@android:color/white" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

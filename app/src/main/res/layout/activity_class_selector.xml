@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/spinnerClass"
+        android:layout_width="405dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="279dp"
+        android:background="@drawable/textview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDept" />
+
+    <Spinner
+        android:id="@+id/spinnerDept"
+        android:layout_width="399dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="415dp"
+        android:background="@drawable/textview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSession" />
+
+    <Spinner
+        android:id="@+id/spinnerSession"
+        android:layout_width="401dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="558dp"
+        android:background="@drawable/textview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMenu" />
+
+    <Spinner
+        android:id="@+id/spinnerSubject"
+        android:layout_width="401dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="71dp"
+        android:background="@drawable/textview"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMarkAttendance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerClass" />
+
+    <TextView
+        android:id="@+id/textViewMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="663dp"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/mark_attendance"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonMarkAttendance"
+        android:layout_width="160dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="113dp"
+        android:text="@string/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerClass" />
+
+</android.support.constraint.ConstraintLayout>

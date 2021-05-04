@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="663dp"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/mark_attendance"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonNextStudent"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/nextstudent"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSession"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonScanFinger" />
+
+    <TextView
+        android:id="@+id/textViewSession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="275dp"
+        android:layout_marginBottom="34dp"
+        android:text="fgfhfhgfhfh"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDept"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMenu" />
+
+    <Button
+        android:id="@+id/buttonMarkAttendance"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="366dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="21dp"
+        android:text="@string/mark_attendance"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNextStudent" />
+
+    <TextView
+        android:id="@+id/textViewDept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="289dp"
+        android:layout_marginBottom="34dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/textViewClass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSession" />
+
+    <TextView
+        android:id="@+id/textViewClass"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="348dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNextStudent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDept" />
+
+    <TextView
+        android:id="@+id/textViewSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="348dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNextStudent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDept"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="123dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="223dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="195dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNextStudent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMenu"
+        app:srcCompat="@drawable/finger" />
+
+    <Button
+        android:id="@+id/buttonScanFinger"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/scanfinger"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNextStudent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+</android.support.constraint.ConstraintLayout>

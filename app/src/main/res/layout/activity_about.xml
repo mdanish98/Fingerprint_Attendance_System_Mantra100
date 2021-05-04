@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#304769"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="50dp"
+    tools:context="com.example.mega2.final_livw_demo.About">
+
+    <TextView
+        android:id="@+id/tVAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/dev"
+        android:textColor="#ccc"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageViewAisha"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/aishaedited" />
+
+
+    <TextView
+        android:id="@+id/txtAisha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/aisha"
+        android:textColor="#ccc"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imageViewAsra"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/asrardited" />
+
+    <TextView
+        android:id="@+id/txtAsra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/asra"
+        android:textColor="#ccc"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imageViewDanish"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/danishedited" />
+
+    <TextView
+        android:id="@+id/txtDanish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/danish"
+        android:textColor="#ccc"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

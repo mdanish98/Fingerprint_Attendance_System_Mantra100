@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ebooks_bg"
+    tools:context="com.example.mega2.final_livw_demo.Detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_marginStart="50sp"
+        android:layout_marginEnd="50sp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt4"
+            android:onClick="fun1"
+            android:layout_height="match_parent"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/add_emp"
+            android:background="@drawable/card"
+            android:paddingBottom="20sp"
+            android:paddingTop="10sp"
+            android:paddingStart="10sp"
+            android:textColor="@android:color/white"
+            android:paddingEnd="10sp"
+            android:text="New &#10;user"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/bt5"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/card"
+            android:layout_marginStart="30sp"
+            android:drawableTop="@drawable/existing"
+            android:onClick="fun1"
+            android:paddingEnd="5sp"
+            android:textColor="@android:color/white"
+            android:paddingBottom="20sp"
+            android:paddingTop="10sp"
+            android:paddingStart="5sp"
+            android:text="Existing &#10;user"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210sp"
+        android:layout_marginTop="30sp"
+        android:layout_marginStart="50sp"
+        android:layout_marginEnd="50sp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt6"
+            android:onClick="fun1"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/downloadicon"
+            android:background="@drawable/card"
+            android:text="Download &#10;Data"
+            android:paddingEnd="5sp"
+            android:paddingBottom="20sp"
+            android:paddingTop="10sp"
+            android:textColor="@android:color/white"
+            android:paddingStart="5sp"
+            android:textSize="26sp" />
+
+
+        <Button
+            android:id="@+id/bt7"
+            android:onClick="fun1"
+            android:layout_height="match_parent"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_marginStart="30sp"
+            android:drawableTop="@drawable/upload"
+            android:background="@drawable/card"
+            android:text="@string/upload"
+            android:paddingBottom="20sp"
+            android:paddingTop="10sp"
+            android:textColor="@android:color/white"
+            android:paddingStart="10sp"
+            android:paddingEnd="10sp"
+            android:textSize="26sp" />
+        </LinearLayout>
+</LinearLayout>

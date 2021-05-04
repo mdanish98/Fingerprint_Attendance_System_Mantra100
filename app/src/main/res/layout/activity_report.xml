@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ebooks_bg"
+    tools:context="com.example.mega2.final_livw_demo.Detail">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30sp"
+    android:layout_marginStart="50sp"
+    android:layout_marginEnd="50sp"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/bt_att"
+        android:layout_height="match_parent"
+        android:layout_width="0sp"
+        android:layout_weight="1"
+        android:onClick="detail"
+        android:drawableTop="@drawable/rsz_fb5b958f"
+        android:background="@drawable/card"
+        android:paddingBottom="20sp"
+        android:paddingTop="10sp"
+        android:paddingStart="10sp"
+        android:textColor="@android:color/white"
+        android:paddingEnd="10sp"
+        android:text="Attendance &#10;Report"
+        android:textSize="26sp" />
+
+    <Button
+        android:id="@+id/bt_usr"
+        android:layout_width="0sp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/card"
+        android:layout_marginStart="30sp"
+        android:drawableTop="@drawable/existing"
+        android:paddingEnd="5sp"
+        android:onClick="detail"
+        android:textColor="@android:color/white"
+        android:paddingBottom="20sp"
+        android:paddingTop="10sp"
+        android:paddingStart="5sp"
+        android:text="User &#10;Detail"
+        android:textSize="26sp" />
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="210sp"
+android:layout_marginTop="30sp"
+android:layout_marginStart="50sp"
+android:layout_marginEnd="50sp"
+android:orientation="horizontal">
+
+<Button
+    android:id="@+id/bt_summ"
+    android:layout_width="0sp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:onClick="detail"
+    android:drawableTop="@drawable/deviceinfo"
+    android:background="@drawable/card"
+    android:text="@string/summary"
+    android:paddingEnd="5sp"
+    android:paddingBottom="20sp"
+    android:paddingTop="10sp"
+    android:textColor="@android:color/white"
+    android:paddingStart="5sp"
+    android:textSize="26sp" />
+</LinearLayout>
+    </LinearLayout>

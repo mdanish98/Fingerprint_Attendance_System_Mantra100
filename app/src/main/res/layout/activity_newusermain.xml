@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrlview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/rl2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewEnterdetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enter_details" />
+
+                <EditText
+                    android:id="@+id/editTextEnroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/enrollment"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/editTextStuName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/studentname"
+                    android:inputType="textPersonName" />
+
+                <Spinner
+                    android:id="@+id/spinnerSession"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:background="@drawable/textview" />
+
+                <Spinner
+                    android:id="@+id/spinnerDept"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:background="@drawable/textview" />
+
+                <Spinner
+                    android:id="@+id/spinnerClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:background="@drawable/textview" />
+
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:id="@+id/editTextmobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/mobile"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:selectAllOnFocus="false" />
+
+                <EditText
+                    android:id="@+id/editTextRoll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/roll"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/editText1StudentID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/studentid"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/editTextAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/address"
+                    android:inputType="textMultiLine" />
+
+                <Spinner
+                    android:id="@+id/spinnerGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:background="@drawable/textview" />
+
+                <Button
+                    android:id="@+id/dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="5sp"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/textview"
+                    android:drawableLeft="@drawable/calendar"
+                    android:gravity="center_vertical"
+                    android:hint="@string/date_of_birth"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/preview_finalimage"
+                    android:layout_width="100sp"
+                    android:layout_height="50sp"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginBottom="20sp"
+                    android:layout_weight=".3"
+                    android:background="@drawable/textview"
+                    android:contentDescription="@string/_24_7_support"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp" />
+
+                <Button
+                    android:id="@+id/image_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginBottom="20sp"
+                    android:background="@drawable/textview"
+                    android:drawableLeft="@drawable/camera"
+                    android:gravity="center_vertical"
+                    android:hint="@string/tap_the_box_to_open_camera"
+                    android:textAllCaps="false"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/preview_finalcapture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0sp"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginBottom="20sp"
+                    android:layout_weight=".3"
+                    android:background="@drawable/finger"
+                    android:contentDescription="@string/finger_detail"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp" />
+
+                <Button
+                    android:id="@+id/btnSyncCapture"
+                    style="@android:style/ButtonBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button"
+                    android:text="@string/SyncCapture" />
+
+                <Button
+                    android:id="@+id/buttonsubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit" />
+
+                <Button
+                    android:id="@+id/buttonDelete"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="30sp"
+                    android:layout_marginBottom="10sp"
+                    android:layout_weight=".50"
+                    android:background="@drawable/buttondsgn"
+                    android:text="@string/delete"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
